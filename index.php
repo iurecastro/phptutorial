@@ -1,13 +1,17 @@
 <?php
-$title = 'PHP is awesome!';
 
-$num1 = 1;
-$num2 = 50;
+//get the sum whithout parameters
+function sum(){
+    $numbers = func_get_args();
+    $total = 0;
+    for($i = 0; $i < count($numbers); $i++){
+        $total += $numbers[$i];    
+    }
+    return $total;
+}
 
-$result = $num1 + $num2;
+echo sum(10,20) . '<br/>';
+echo sum(10,20,30) . '<br/>';
 
 
-
-
-require 'index.view.php';
-
+?>
