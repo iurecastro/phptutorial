@@ -7,7 +7,7 @@ $total = $x + $y;
 
 echo $total;
 
-// Adiction
+// Addiction
 $total +=  $x;
 $total = $total + $x;
 
